@@ -11,3 +11,51 @@ notebook/Spark_Magic
 05_Optimize_Binpack_vs_Sort.ipynb
 06_COW_vs_MOR.ipynb
 03_Branches_and_Tags.ipynb
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.env.*
+
+# VSCode / IDEs
+.vscode/
+.idea/
+venv/
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.bak
+*.bkp
+
+# Docker
+*.pid
+*.sock
+docker-compose.override.yml
+volumes/
+data/
+
+# Airflow
+airflow/airflow.db
+airflow/airflow.cfg
+airflow/logs/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb~
+
+# Spark
+metastore_db/
+derby.log
+
+# MinIO
+minio/.minio.sys/
+
+# Arquivos grandes
+*.parquet
+*.db
+*.zip
+*.tar.gz
+*.txt

@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.env.*
+
+# VSCode / IDEs
+.vscode/
+.idea/
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.bak
+
+# Docker
+*.pid
+*.sock
+docker-compose.override.yml
+volumes/
+data/
+
+# Airflow
+airflow/airflow.db
+airflow/airflow.cfg
+airflow/logs/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb~
+
+# Spark
+metastore_db/
+derby.log
+
+# MinIO
+minio/.minio.sys/
+datalake/
+
+# Arquivos grandes
+*.parquet
+*.db
+*.zip
+*.tar.gz
+*.txt
+*.bkp

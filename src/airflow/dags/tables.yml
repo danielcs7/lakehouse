@@ -1,0 +1,24 @@
+
+folders:
+  - source: "clientes"
+    target: "clientes"
+    large_table: false  # ← Adicione esta linha para tabelas grandes
+    partition_column: "data_cadastro"
+    
+
+  - source: "pedido"
+    target: "pedido"
+    large_table: false  # ← Adicione esta linha para tabelas grandes
+    partition_column: "data_pedido"
+    
+    
+
+  - source: "stgPedidos"
+    target: "stgPedidos"  
+    large_table: true  # ← Adicione esta linha para tabelas grandes
+    partition_column: "scompetencia"
+    partition_config:
+      column: "chave"          # Coluna numérica para particionamento
+      lower_bound: 1           # Valor mínimo estimado
+      upper_bound: 10000000    # Valor máximo estimado
+      num_partitions: 10       # Número de partições
