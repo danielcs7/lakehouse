@@ -45,3 +45,4 @@ datalake/
 *.tar.gz
 *.txt
 *.bkp
+*.meta

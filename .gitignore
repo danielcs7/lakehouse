@@ -59,3 +59,5 @@ minio/.minio.sys/
 *.zip
 *.tar.gz
 *.txt
+*.json
+*.meta
