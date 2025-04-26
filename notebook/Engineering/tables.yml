@@ -1,3 +1,11 @@
+
+#folders:
+#  - source: "clientes"
+#    target: "clientes"
+#    large_table: false  # ← Adicione esta linha para tabelas grandes
+#    partition_column: "data_cadastro"
+
+
 folders:
   - source: public.clientes
     target: clientes
