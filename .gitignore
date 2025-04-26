@@ -6,15 +6,40 @@ __pycache__/
 *.log
 *.sqlite
 .env
+volume/
+env/
+.env
+notebook/.ipynb_checkpoints
+notebook/.Trash-0
+*.ipynb_checkpoints
+notebook/Engineering/.ipynb_checkpoints
+
+notebook/Spark_Magic
+04_Expire_Snapshots.ipynb
+05_Optimize_Binpack_vs_Sort.ipynb
+06_COW_vs_MOR.ipynb
+03_Branches_and_Tags.ipynb
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.env.*
 
 # VSCode / IDEs
 .vscode/
 .idea/
+venv/
 
 # Logs e arquivos temporários
 *.log
 *.tmp
 *.bak
+<<<<<<< HEAD
+=======
+*.bkp
+>>>>>>> development
 
 # Docker
 *.pid
@@ -30,7 +55,6 @@ airflow/logs/
 
 # Jupyter
 .ipynb_checkpoints/
-#*.ipynb~
 
 # Spark
 metastore_db/
@@ -40,9 +64,11 @@ derby.log
 minio/.minio.sys/
 # Ignorar arquivos temporários ou gerados
 /src/minio_data/.minio.sys/tmp/*
+
 # Arquivos grandes
 *.parquet
 *.db
 *.zip
 *.tar.gz
-*.txt
+*.json
+*.meta
