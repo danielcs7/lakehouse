@@ -1,4 +1,3 @@
-
 -- DROP TABLE public.clientes;
 CREATE TABLE public.auditoria (
 	id serial4 NOT NULL,

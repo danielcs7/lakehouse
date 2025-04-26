@@ -4,6 +4,8 @@ __pycache__/
 *.egg-info/
 .env
 .env.*
+src/minio_data/
+
 
 # VSCode / IDEs
 .vscode/
@@ -13,6 +15,7 @@ __pycache__/
 *.log
 *.tmp
 *.bak
+*.bin
 
 # Docker
 *.pid
@@ -34,9 +37,11 @@ airflow/logs/
 metastore_db/
 derby.log
 
+
 # MinIO
-minio/.minio.sys/
+src/minio_data/
 datalake/
+**/.minio.sys/
 
 # Arquivos grandes
 *.parquet

@@ -57,9 +57,8 @@ metastore_db/
 derby.log
 
 # MinIO
-minio/.minio.sys/
-# Ignorar arquivos temporários ou gerados
-/src/minio_data/.minio.sys/tmp/*
+src/minio_data/
+**/.minio.sys/
 
 # Arquivos grandes
 *.parquet
@@ -68,7 +67,3 @@ minio/.minio.sys/
 *.tar.gz
 *.json
 *.meta
-git restore src/minio_data/.minio.sys/buckets/.bloomcycle.bin/xl.meta
-git restore src/minio_data/.minio.sys/buckets/.usage-cache.bin/xl.meta
-git restore src/minio_data/.minio.sys/buckets/.usage.json/xl.meta
-git restore src/minio_data/.minio.sys/buckets/ingestion/.usage-cache.bin/xl.meta
