@@ -35,11 +35,7 @@ venv/
 # Logs e arquivos temporários
 *.log
 *.tmp
-*.bak
-<<<<<<< HEAD
-=======
 *.bkp
->>>>>>> development
 
 # Docker
 *.pid
@@ -72,3 +68,7 @@ minio/.minio.sys/
 *.tar.gz
 *.json
 *.meta
+git restore src/minio_data/.minio.sys/buckets/.bloomcycle.bin/xl.meta
+git restore src/minio_data/.minio.sys/buckets/.usage-cache.bin/xl.meta
+git restore src/minio_data/.minio.sys/buckets/.usage.json/xl.meta
+git restore src/minio_data/.minio.sys/buckets/ingestion/.usage-cache.bin/xl.meta
