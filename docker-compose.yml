@@ -230,6 +230,7 @@ services:
   spark-worker:
     build:
       dockerfile: ./src/spark/Dockerfile-spark3.5
+      no_cache: true  # Adicionar esta linha
     image: dataincode/openlakehouse:spark-3.5
     deploy:
       replicas: 1
